@@ -4,10 +4,10 @@
 /**
  * main - where the execution of the program starts
  * description - the main function
- * Return 1 (Sucess)
+ * Return: 1 (Sucess)
  */
 int main(void)
 {
-	fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
