@@ -4,7 +4,7 @@
 /**
  * main - where the execution of the program starts
  * description - the main function
- * Return: 1 (sucess)
+ * Return 1 (Sucess)
  */
 int main(void)
 {
