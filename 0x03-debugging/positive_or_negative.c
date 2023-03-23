@@ -3,7 +3,7 @@
 /**
  * positive_or_negative - this function checkes the number sign
  * description: this funct takes one argument
- * parameter: i type number
+ * @i: i type number
  */
 void positive_or_negative(int i)
 {
