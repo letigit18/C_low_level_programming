@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * more_numbers - the functions that prints number
+ * description - this funcntion has certain condition to print
+ */
 void more_numbers(void)
 {
 	int i;
@@ -15,4 +19,4 @@ void more_numbers(void)
 		}
 	_putchar('\n');
 	}
-}	
+}
