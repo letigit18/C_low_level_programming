@@ -35,8 +35,8 @@ int main(int argc, char *argv[])
 	int sum;
 	int j;
 	int num;
-	sum = 0;
 
+	sum = 0;
 	for (j = 1; j < argc; j++)
 	{
 		num = atoi(argv[j]);
