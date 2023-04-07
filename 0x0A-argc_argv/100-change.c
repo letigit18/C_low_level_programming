@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	while (coins[pos] != '\0')
+	while (coins[pos] != 0)
 	{
 		if (num >= coins[pos])
 		{
