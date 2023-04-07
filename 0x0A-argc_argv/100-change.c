@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		{
 			aux = num / coins[pos];
 			change = change + aux;
-			num = coins[pos] * aux;
+			num -= coins[pos] * aux;
 		}
 		pos++;
 	}
