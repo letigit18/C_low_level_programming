@@ -13,6 +13,10 @@ char *_strdup(char *str)
 	int counter;
 
 	counter = 0;
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	while (str[counter] != '\0')
 	{
 		counter++;
@@ -22,7 +26,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (i = 0; str[i]; i++)
+	for (i = 0; i < counter; i++)
 	{
 		p[i] = str[i];
 	}
