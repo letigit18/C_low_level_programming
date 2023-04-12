@@ -5,7 +5,7 @@
  * array_range - the function that compute array_range
  * @min: the firs parater
  * @max: the second paramter
- * Return: the address 
+ * Return: the address
  */
 int *array_range(int min, int max)
 {
