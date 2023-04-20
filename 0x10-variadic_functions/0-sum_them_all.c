@@ -8,9 +8,9 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	int sum;
+	unsigned int sum;
 	unsigned int i;
-	int x;
+	unsigned int x;
 
 	sum = 0;
 	if (n == 0)
