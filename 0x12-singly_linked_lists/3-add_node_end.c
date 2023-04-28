@@ -12,9 +12,9 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *last_node;
-	usigned int length;
-
 	list_t *temp = *head;
+
+	unsigned int lenght;
 
 	length = 0;
 	while (str[length] != '\0')
@@ -23,7 +23,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	last_node = malloc(sizeof(list_t));
 
-	if (last_node == NULL)
+	if (!last_node)
 	{
 		return (NULL);
 	}
