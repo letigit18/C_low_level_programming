@@ -13,7 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *last_node;
 	list_t *temp = *head;
 
-	unsigned int lenght;
+	unsigned int length;
 
 	length = 0;
 	while (str[length])
