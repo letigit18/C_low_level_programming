@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "lists_h"
+#include "lists.h"
 /**
  * print_list - the function that returns no. of nodes
  * @h: the prameter
@@ -10,7 +10,7 @@ size_t print_list(const list_t *h)
 	size_t count;
 
 	count = 0;
-	while (h)
+	while (h != NULL)
 	{
 		if (!h->str)
 		{
@@ -20,8 +20,8 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%u] %s\n", h->len, h->str);
 		}
-		h = h->next;
 		count++;
+		h = h->next;
 	}
 	return (count);
 }
