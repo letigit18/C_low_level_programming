@@ -8,6 +8,7 @@
 size_t print_list(const list_t *h)
 {
 	unsigned int count;
+
 	count = 0;
 	if (h->str == NULL)
 	{
@@ -20,5 +21,5 @@ size_t print_list(const list_t *h)
 		count++;
 		h = h->next;
 	}
-	return count;
+	return (count);
 }
