@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "lists.h"
@@ -12,6 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *last_node;
 	usigned int length;
+
 	list_t *temp = *head;
 
 	length = 0;
@@ -20,6 +22,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		length++;
 	}
 	last_node = malloc(sizeof(list_t));
+
 	if (last_node == NULL)
 	{
 		return (NULL);
