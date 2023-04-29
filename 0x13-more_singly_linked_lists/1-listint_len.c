@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "lists.h"
 
 /**
  * listint_len - computes length of elements
@@ -16,5 +16,5 @@ size_t listint_len(const listint_t *h)
 		length++;
 		h = h->next;
 	}
-	return length;
+	return (length);
 }
