@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -12,7 +12,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	listint_t *ptr = head;
 	unsigned int c;
 
-	while (ptr != NULL && c < index)
+	while (ptr && c < index)
 	{
 		ptr = head->next;
 		c++;
