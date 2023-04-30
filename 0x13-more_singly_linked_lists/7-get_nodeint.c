@@ -12,17 +12,15 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	listint_t *ptr = head;
 	unsigned int c;
 
-	if (head == NULL)
-	{
-		return (NULL);
-	}
-	else
-	{
 	while (ptr != NULL && c < index)
 	{
 		ptr = head->next;
 		c++;
 	}
+	if (ptr == NULL)
+        {
+                return (NULL);
+        }
 	return (ptr);
-	}
+	
 }
