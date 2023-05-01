@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
 
@@ -19,10 +20,6 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	for (c = 0; c < index; c++)
 	{
 		ptr = head->next;
-	}
-	if (ptr == NULL)
-	{
-		return (NULL);
 	}
 	return (ptr);
 }
