@@ -29,7 +29,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = new_node;
 		return (new_node);
 	}
-	while (ptr && pos < idx - 1)
+	while (ptr && pos < (idx - 1))
 	{
 		pos++;
 		ptr2 = ptr;
