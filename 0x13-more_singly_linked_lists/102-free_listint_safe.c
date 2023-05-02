@@ -12,6 +12,7 @@ size_t free_listint_safe(listint_t **h)
 	size_t length;
 	listint_t *ptr = *head;
 
+	length = 0;
 	if (*head == NULL)
 	{
 		return (0);
