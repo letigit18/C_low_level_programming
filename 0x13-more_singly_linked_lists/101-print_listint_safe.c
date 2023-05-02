@@ -22,19 +22,19 @@ size_t calculate_length(const listint_t *head)
 	temp = head->next;
 	temp2 = (head->next)->next;
 	count += 1;
-	while (temp2)
+	for (; temp2;)
 	{
 		if (temp == temp2)
 		{
 			temp = head;
-			while (temp != temp2)
+			for (; temp != temp2;)
 			{
 				count++;
 				temp = temp->next;
 				temp2 = temp2->next;
 			}
 			temp = temp->next;
-			while (temp != temp2)
+			for (; temp != temp2;)
 			{
 				count++;
 				temp = temp->next;
