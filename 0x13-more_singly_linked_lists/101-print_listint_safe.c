@@ -28,14 +28,14 @@ size_t calculate_length(const listint_t *head)
 			temp = head;
 			while (temp != temp2)
 			{
-				length++;
+				count++;
 				temp = temp->next;
 				temp2 = temp2->next;
 			}
 			temp = temp->next;
 			while (temp != temp2)
 			{
-				length++;
+				count++;
 				temp = temp->next;
 			}
 			return (length);
