@@ -12,9 +12,13 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	unsigned int c;
 	listint_t *ptr = head;
 
-	for (c = 0; c < index; c++)
+	for (c = 0; ptr && c < index; c++)
 	{
 		ptr = head->next;
+		if (c == index - 1)
+		{
+			return (ptr);
+		}
 	}
 	if (ptr == NULL)
 	{
