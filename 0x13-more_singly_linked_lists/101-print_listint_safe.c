@@ -10,17 +10,18 @@ size_t calculate_length(const listint_t *head);
  */
 size_t calculate_length(const listint_t *head)
 {
+	size_t count;
 	const listint_t *temp;
 	const listint_t *temp2;
-	size_t count;
 
-	count = 1;
+	count = 0;
 	if (head == NULL)
 	{
 		return (0);
 	}
 	temp = head->next;
 	temp2 = (head->next)->next;
+	count += 1;
 	while (temp2)
 	{
 		if (temp == temp2)
