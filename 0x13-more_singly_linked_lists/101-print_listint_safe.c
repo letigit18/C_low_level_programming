@@ -10,19 +10,41 @@ size_t calculate_length(const listint_t *head);
  */
 size_t calculate_length(const listint_t *head)
 {
+	listint_t temp;
+	listint_t temp2;
 	size_t count;
 
-	count = 0;
+	count = 1;
 	if (head == NULL)
 	{
 		return (0);
 	}
-	while (head != NULL)
+	temp = head->next;
+	temp2 = (head->next)->next;
+	while (temp2)
 	{
-		count++;
-		head = head->next;
+		if (temp == temp2)
+		{
+			temp = head;
+			while (temp != temp2)
+			{
+				length++;
+				temp = temp->next;
+				temp2 = temp2->next;
+			}
+			temp = temp->next;
+			while (temp != temp2)
+			{
+				length++;
+				temp = temp->next;
+			}
+			return (length);
+		}
+		temp = temp->next;
+		temp2 = (temp2->next)->next;
+
 	}
-	return (count);
+	return (0);
 }
 /**
  * print_listint_safe - prints the list
@@ -36,11 +58,24 @@ size_t print_listint_safe(const listint_t *head)
 
 	i = 0;
 	length = calculate_length(head);
+	if (length == 0)
+	{
+		while (head != NULL)
+		{
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
+			length++;
+		}
+	}
+	else
+	{
 	while (i < length)
 	{
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 		i++;
+	}
+	printf("-> [%p] %d\n", (void *)head, head->n);
 	}
 	return (length);
 }
