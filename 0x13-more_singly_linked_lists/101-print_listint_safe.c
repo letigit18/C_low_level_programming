@@ -38,7 +38,7 @@ size_t calculate_length(const listint_t *head)
 				count++;
 				temp = temp->next;
 			}
-			return (length);
+			return (count);
 		}
 		temp = temp->next;
 		temp2 = (temp2->next)->next;
