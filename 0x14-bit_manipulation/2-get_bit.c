@@ -17,7 +17,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 	else
 	{
-	k = (n >> 1) & 1;
+	k = (n >> index) & 1;
 	return (k);
 	}
 }
