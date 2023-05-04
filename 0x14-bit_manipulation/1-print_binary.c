@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -21,7 +20,7 @@ void print_binary(unsigned long int n)
 			_putchar('1');
 			len++;
 		}
-		else if (len);
+		else if (len)
 		{
 			_putchar('0');
 		}
