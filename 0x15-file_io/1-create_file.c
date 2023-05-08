@@ -22,7 +22,7 @@ int create_file(const char *filename, char *text_content)
 			i++;
 		}
 	}
-	fp = open(filename, O_CREAT | O_RDWR | O_TRUNK, 0600);
+	fp = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	wo = write(fp, text_content, i);
 	if (fp == -1 || wo == -1)
 		return (-1);
