@@ -37,7 +37,7 @@ void file_close(int fd)
  * @argv: the arguments passed
  * Return: 0 for success
  */
-int main(argc, *argv[])
+int main(int argc, char *argv[])
 {
 	int source;
 	int dest;
