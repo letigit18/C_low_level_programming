@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-char create_string_buffer(char *f);
+#include "main.h"
+char *create_string_buffer(char *f);
 void file_close(int fd);
 /**
  * create_string_buffer - the function that creates buffer
  * @f: paramater passed to fun.
  * Return: the buffer
  */
-char create_string_buffer(char *f)
+char *create_string_buffer(char *f)
 {
 	char *str_buffer;
 
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 			free(str_buffer);
 			exit(98);
 		wo = write(dest, str_buffer, ro);
-		if (des == -1 || wo == -1)
+		if (dest == -1 || wo == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to  %s\n", argv[2]);
 			free(str_buffer);
 			exit(99);
