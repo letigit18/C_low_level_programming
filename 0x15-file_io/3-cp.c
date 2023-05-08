@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+char create_string_buffer(char *f);
+void file_close(int fd);
 /**
  * create_string_buffer - the function that creates buffer
  * @f: paramater passed to fun.
